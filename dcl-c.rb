@@ -1,10 +1,10 @@
 require 'formula'
 
 class DclC < Formula
-  url 'http://www.gfd-dennou.org/arch/dcl/dcl-5.4.8-C.tar.gz'
-  homepage 'http://www.gfd-dennou.org/index.html.en'
-  sha256 '04271b061bd63b203521bf9b367f3191560ba95baaff93fc5fbf8d2f534cc9cd'
-  version '5.4.8'
+  url 'http://gfd-dennou.org/library/dcl/dcl-6.0.4-C.tar.gz'
+  homepage 'http://gfd-dennou.org/index.html.en'
+  sha256 '62003ae11c4d4a88e5112d7055d5abdce71cc9cb274b823b77053aca2b486ea1'
+  version '6.0.4'
 
   depends_on 'gtk+'
 
