@@ -6,7 +6,7 @@ class Eblook < Formula
   sha256 "08e154eae27cc061e0c67dc9c0c346707defbb2bbfdb757ee00f22af4c059e1b"
   version "1.6.1+media-20150724"
 
-  depends_on "eb"
+  depends_on "ebu"
 
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
