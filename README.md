@@ -1,6 +1,6 @@
 # My Homebrew tap
 
-Just a Homebrew tap to use for things I want to install via homebrew but which don't have formulas.
+Just a Homebrew tap to use for things I want to install via Homebrew but which don't have formulas.
 
 # How to install
 
