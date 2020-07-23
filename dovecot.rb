@@ -108,7 +108,6 @@ __END__
  	}
  	*http_url_r = tuser->http_url;
  	return 0;
-diff -u -ur dovecot-2.3.10.1-orig/src/plugins/fts-solr/solr-connection.c dovecot-2.3.10.1/src/plugins/fts-solr/solr-connection.c
 --- dovecot-2.3.10.1-orig/src/plugins/fts-solr/solr-connection.c	2020-05-13 00:44:05.000000000 +0900
 +++ dovecot-2.3.10.1/src/plugins/fts-solr/solr-connection.c	2020-06-13 14:15:27.000000000 +0900
 @@ -103,7 +103,7 @@
