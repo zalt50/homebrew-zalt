@@ -1,8 +1,8 @@
 class Tmux < Formula
   desc "Terminal multiplexer"
   homepage "https://tmux.github.io/"
-  url "https://github.com/tmux/tmux/releases/download/3.1b/tmux-3.1b.tar.gz"
-  sha256 "d93f351d50af05a75fe6681085670c786d9504a5da2608e481c47cf5e1486db9"
+  url "https://github.com/tmux/tmux/releases/download/3.2-rc/tmux-3.2-rc2.tar.gz"
+  sha256 "41004e75fcf0a4c7cb31df24bfb4b5315b59d5c5afb18466b0f89710d340faa9"
   license "ISC"
 
   livecheck do
@@ -32,8 +32,8 @@ class Tmux < Formula
   end
 
   patch :p1 do
-    url "https://raw.githubusercontent.com/z80oolong/tmux-eaw-fix/master/tmux-3.1b-fix.diff"
-    sha256 "f9efcbdcd7048b549141ca06be435dbc142d99fefc06464995aea650f778d480"
+    url "https://raw.githubusercontent.com/z80oolong/tmux-eaw-fix/master/tmux-3.2-rc2-fix.diff"
+    sha256 "340be4bddcded9b8bd3aa5f4f3c237ef4fa7e74061e185dc251589e94107e408"
   end
 
   def install
