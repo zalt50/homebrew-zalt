@@ -4,15 +4,18 @@ class Gnuplot < Formula
   url "https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.1/gnuplot-5.4.1.tar.gz"
   sha256 "6b690485567eaeb938c26936e5e0681cf70c856d273cc2c45fabf64d8bc6590e"
   license "gnuplot"
+  revision 1
 
   livecheck do
     url :stable
   end
 
   bottle do
-    sha256 "48dfc995b542fc510eeacaa50ff2d178440e66cb9fd80fccbf760bdef02d5522" => :big_sur
-    sha256 "a672db045bd69db5da78aa59c373d26bb38ed2058db9739af76660301031ddec" => :catalina
-    sha256 "035a3b09b2a7dd73605dc7339246b9b69e8665ddb56f890cea31f2a7787859d8" => :mojave
+    rebuild 1
+    sha256 "9a9db26ab2b8537521d4ff508d4797c8535434ddd34748ab4044867d8eef65a0" => :big_sur
+    sha256 "72a503fc93c60629c22d4f286d45365037d792d76c2f7ff8a76e6469641b0cc7" => :arm64_big_sur
+    sha256 "1de9920502210ab56fbedc9bf4025ab8f0c88d164f022a1e767863f64b6e9954" => :catalina
+    sha256 "19ed248f7d406ade2e6fd1faa28069878cd5b2a0b73911d735289478faaab8c3" => :mojave
   end
 
   head do
@@ -30,7 +33,7 @@ class Gnuplot < Formula
   depends_on "pango"
   depends_on "qt"
   depends_on "readline"
-  depends_on :x11
+  depends_on "libx11"
 
   def install
     # Qt5 requires c++11 (and the other backends do not care)
@@ -44,6 +47,7 @@ class Gnuplot < Formula
       --without-tutorial
       --disable-wxwidgets
       --with-qt
+      --without-latex
     ]
 
     system "./prepare" if build.head?
