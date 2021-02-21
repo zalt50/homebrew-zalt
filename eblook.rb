@@ -1,10 +1,10 @@
 require "formula"
 
 class Eblook < Formula
-  url "http://green.ribbon.to/~ikazuhiro/lookup/files/eblook-1.6.1+media-20150724.tar.gz"
+  url "http://green.ribbon.to/~ikazuhiro/lookup/files/eblook-1.6.1+media-20200414.tar.gz"
   homepage "http://green.ribbon.to/~ikazuhiro/lookup/lookup.html#EBLOOK"
-  sha256 "08e154eae27cc061e0c67dc9c0c346707defbb2bbfdb757ee00f22af4c059e1b"
-  version "1.6.1+media-20150724"
+  sha256 "ebd5886176c2d52aea9077ef441af06b9181bda2ac4395def55ff305c288094e"
+  version "1.6.1+media-20200414"
 
   depends_on "ebu"
 
